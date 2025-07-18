@@ -1,164 +1,214 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Outlaw Nottingham 2025 — Race Weekend Plan</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fdfdfd;
-      color: #333;
-      margin: 20px;
-      line-height: 1.6;
-    }
-    h1, h2, h3 {
-      color: #d35400;
-      margin-top: 30px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 20px;
-    }
-    th, td {
-      padding: 10px;
-      border-bottom: 1px solid #ddd;
-      text-align: left;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    ul li::marker {
-      content: "✔️ ";
-    }
-    .section {
-      background-color: #fff;
-      padding: 20px;
-      margin-bottom: 30px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
-    .highlight {
-      background-color: #fef6e4;
-      padding: 10px;
-      border-left: 4px solid #f4a261;
-      margin: 10px 0;
-    }
+    :root {
+      --orange: #d35400;
+      --accent: #f4a261;
+      --light-bg: #fff;
+      --text: #333;
+      --bg: #fdfdfd;
+      --highlight: #fef6e4;
+    }html {
+  scroll-behavior: smooth;
+}
 
-    /* PRINT STYLING */
-    @media print {
-      body {
-        background: white;
-        color: black;
-        margin: 0;
-        font-size: 12pt;
-      }
-      .section {
-        box-shadow: none;
-        page-break-inside: avoid;
-        margin-bottom: 10px;
-        padding: 10px;
-      }
-      .highlight {
-        background-color: #fff3cd !important;
-        border-left: 4px solid #f4a261;
-      }
-      h1, h2, h3 {
-        color: black;
-      }
-      table, th, td {
-        border: 1px solid #999;
-      }
-    }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--orange);
+  color: white;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+nav {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+section {
+  background: var(--light-bg);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  color: var(--orange);
+  margin-top: 0;
+}
+
+.highlight {
+  background: var(--highlight);
+  padding: 0.8rem;
+  border-left: 4px solid var(--accent);
+  margin: 1rem 0;
+}
+
+ul li::marker {
+  content: "✔️ ";
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+th {
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: left;
+  font-weight: bold;
+  padding: 0.75rem;
+  border-bottom: 2px solid #ddd;
+}
+
+td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #eee;
+}
+
+td:first-child {
+  font-weight: bold;
+  color: #222;
+  width: 140px;
+}
+
+@media (max-width: 600px) {
+  table, thead, tbody, tr, th, td {
+    display: block;
+  }
+  thead {
+    display: none;
+  }
+  tr {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+  }
+  td {
+    padding: 0.5rem;
+    border: none;
+  }
+  td:first-child {
+    font-weight: bold;
+    color: var(--orange);
+  }
+}
+
   </style>
 </head>
 <body>
-
-  <h1>🏁 Outlaw Nottingham 2025 — Race Weekend Plan</h1>
-
-  <div class="section">
-    <h2>📅 Saturday, July 26 — Registration & Preparation</h2>
-    <table>
+  <header>
+    <h1>🏁 Outlaw Nottingham 2025 — Race No. 168</h1>
+    <nav>
+      <a href="#saturday">Saturday</a>
+      <a href="#sunday">Sunday</a>
+      <a href="#nutrition">Nutrition</a>
+      <a href="Outlaw Nottingham 2025 — Race Weekend Plan.pdf" target="_blank">📄 Race Manual</a>
+    </nav>
+  </header>  <main>
+    <section id="saturday">
+      <h2>📅 Saturday, July 26 — Registration & Prep</h2>
+      <table>
+        <thead>
+          <tr><th>Time</th><th>Action</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>08:00</td><td>Breakfast: oats, banana, honey, small coffee</td></tr>
+          <tr><td>09:30</td><td>Check race documents</td></tr>
+          <tr><td>10:30–14:30</td><td>Registration & racking (suggested: 11:30–12:30)</td></tr>
+          <tr><td>After reg.</td><td>Pick up pack, timing chip, wristband; rack bike</td></tr>
+          <tr><td>13:00</td><td>Lunch/snack</td></tr>
+          <tr><td>15:00</td><td>Finalize bags; label gear</td></tr>
+          <tr><td>16:30</td><td>Snack: rice cake + drink</td></tr>
+          <tr><td>18:00</td><td>Dinner: pasta, bread, PH 1500</td></tr>
+          <tr><td>20:00</td><td>Snack (optional)</td></tr>
+          <tr><td>21:30</td><td>Lights out</td></tr>
+        </tbody>
+      </table>
+      <ul>
+        <li>Bring all documents</li>
+        <li>Set up transition space</li>
+        <li>Hydrate until 19:00</li>
+        <li>Lay out kit & nutrition</li>
+      </ul>
+    </section><section id="sunday">
+  <h2>🏃 Sunday, July 27 — Race Day</h2>
+  <table>
+    <thead>
       <tr><th>Time</th><th>Action</th></tr>
-      <tr><td>08:00</td><td>Breakfast: oats, banana, honey, small coffee</td></tr>
-      <tr><td>09:30</td><td>Double-check race documents: Photo ID, confirmation, license if needed</td></tr>
-      <tr><td>10:30–14:30</td><td>Registration & racking window (suggested: 11:30–12:30)</td></tr>
-      <tr><td>After reg.</td><td>Pick up athlete pack, timing chip, wristband; rack bike; prep transition</td></tr>
-      <tr><td>13:00</td><td>Light lunch/snack: white rice, bread, banana, or as appetite dictates</td></tr>
-      <tr><td>15:00</td><td>Finalize nutrition in special needs and transition bags; label all gear</td></tr>
-      <tr><td>16:30</td><td>Light snack: rice cake, electrolyte drink</td></tr>
-      <tr><td>18:00</td><td>Dinner: pasta, bread, plain sauce; 500ml PH 1500</td></tr>
-      <tr><td>20:00</td><td>Light snack: yogurt, rice pudding (if hungry)</td></tr>
-      <tr><td>21:30</td><td>Lights out; prioritize calm, restful sleep</td></tr>
-    </table>
-
-    <h3>📝 Notes</h3>
-    <ul>
-      <li>Bring all required documents for registration.</li>
-      <li>Rack your bike and set up your transition space after registration.</li>
-      <li>Hydrate throughout Saturday, finishing main hydration by <strong>19:00</strong>.</li>
-      <li>Lay out morning kit, special needs bag, and race nutrition before bed.</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>🏃 Sunday, July 27 — Race Day</h2>
-    <table>
-      <tr><th>Time</th><th>Action</th></tr>
-      <tr><td>03:30</td><td>Wake up; 5–10 min light stretching/mobility</td></tr>
-      <tr><td>03:45</td><td>Breakfast: oats or toast, banana, honey, 500ml PH 1500</td></tr>
-      <tr><td>04:45</td><td>Light snack/top-up: rice cake or half-bagel, sip of water</td></tr>
-      <tr><td>05:15</td><td>1x PF 30 gel, 200ml water</td></tr>
-      <tr><td>05:30</td><td>Arrive at transition, finalize setup, suit up</td></tr>
+    </thead>
+    <tbody>
+      <tr><td>03:30</td><td>Wake up, stretch</td></tr>
+      <tr><td>03:45</td><td>Breakfast</td></tr>
+      <tr><td>04:45</td><td>Top-up snack</td></tr>
+      <tr><td>05:15</td><td>1x PF 30 gel, water</td></tr>
+      <tr><td>05:30</td><td>Arrive at transition</td></tr>
       <tr><td>06:00</td><td><strong>Race Start — Swim (3.8 km)</strong></td></tr>
       <tr><td>07:15</td><td><strong>Estimated Swim Finish</strong></td></tr>
-      <tr><td>07:15–07:25</td><td class="highlight">Transition 1 (T1): Allow 10 mins — stay calm and efficient</td></tr>
+      <tr><td>07:15–07:25</td><td><em>Transition 1 (T1)</em>: Allow 10 mins — stay calm and efficient</td></tr>
       <tr><td>07:25</td><td><strong>Bike Start — 180 km</strong></td></tr>
       <tr><td>12:55</td><td><strong>Estimated Bike Finish</strong></td></tr>
-      <tr><td>12:55–13:02</td><td class="highlight">Transition 2 (T2): Allow 7 mins — reset, hydrate, prepare to run</td></tr>
+      <tr><td>12:55–13:02</td><td><em>Transition 2 (T2)</em>: Allow 7 mins — reset, hydrate, prepare to run</td></tr>
       <tr><td>13:02</td><td><strong>Run Start — 42.2 km</strong></td></tr>
       <tr><td>16:45–17:00</td><td><strong>Estimated Finish Line!</strong></td></tr>
-    </table>
-  </div>
+    </tbody>
+  </table>
+</section>
 
-  <div class="section">
-    <h2>🧠 Key Pacing & Nutrition</h2>
+<section id="nutrition">
+  <h2>🧠 Key Pacing, Nutrition & Aid Stations</h2>
+  <table>
+    <thead><tr><th>Discipline</th><th>Strategy</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Swim</strong> (3.8 km)</td><td>Target 1:15:00 (1:58/100m); settle early, steady effort</td></tr>
+      <tr><td><strong>Bike</strong> (180 km)</td><td>Target 5:30–5:40; 190W NP; 750ml/hr fluids, 75g/hr carbs; reload at Aslockton</td></tr>
+      <tr><td><strong>Run</strong> (42.2 km)</td><td>Start 5:30–5:45/km, build to 5:15–5:30/km; gel every 40–45 min; hydrate at stations</td></tr>
+      <tr><td><strong>Transition</strong></td><td>500m jog; T1: 10 min, T2: 7 min; stay calm and efficient</td></tr>
+    </tbody>
+  </table>
+  <h3 style="margin-top: 1.5rem; color: var(--orange);">🧃 Aid Station Summary</h3>
+  <ul>
+    <li><strong>Bike Course</strong>: Eden Hall & Aslockton — water, isotonic drink, gels. Special needs at Aslockton.</li>
+    <li><strong>Run Course</strong>: Every 2–3 km — water, electrolyte, gels, fruit (e.g. bananas), cola at some stations.</li>
+  </ul>
+</section>
 
-    <h3>🏊 Swim — 3.8 km (Target: 1:15:00)</h3>
-    <ul>
-      <li>Target pace: <strong>1:58/100m</strong></li>
-      <li>Steady effort; sight and settle early</li>
-    </ul>
-
-    <h3>🚴 Bike — 180 km (Target: 5:30–5:40)</h3>
-    <ul>
-      <li>Normalized Power: <strong>190W</strong> (0.68 IF, 280W FTP)</li>
-      <li>Nutrition: <strong>750ml fluids/hour</strong> (6 bottles), <strong>75g carbs/hour</strong> (14–16 gels)</li>
-      <li>Reload bottles at <strong>Aslockton</strong> (special needs, each lap)</li>
-      <li>On-course nutrition available at <strong>Eden Hall/Aslockton</strong></li>
-    </ul>
-
-    <h3>🏃 Run — 42.2 km (Target: 3:45–4:00)</h3>
-    <ul>
-      <li>Start pace: <strong>5:30–5:45/km</strong>, build to <strong>5:15–5:30/km</strong> if feeling strong</li>
-      <li>Gel every <strong>40–45 min</strong>, drink water/electrolyte at every station</li>
-      <li>Adjust pace after <strong>30 km</strong> to finish strong</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>✅ Final Checklist</h2>
-    <ul>
-      <li>Registration docs and ID packed</li>
-      <li>Bike racked, kit and nutrition labeled and prepped</li>
-      <li>Special needs bag handed in</li>
-      <li>Garmin charged and race file loaded</li>
-      <li>Timing chip and number wristband ready</li>
-      <li>Rested and mentally prepared</li>
-    </ul>
-  </div>
-
+  </main>
 </body>
 </html>
-``
